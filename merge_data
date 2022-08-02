@@ -5,5 +5,5 @@ import pandas as pd
 
 dfs = [pd.read_csv(fp) for fp in argv[1:]]
 df = pd.concat(dfs, axis=0)
-df.to_csv('data.csv')
+df.to_csv('data.csv', index=False)
     
